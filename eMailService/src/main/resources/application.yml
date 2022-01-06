@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: emailService
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: milosapptest@gmail.com
+    password: mTa12345
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+server:
+  port : 8090

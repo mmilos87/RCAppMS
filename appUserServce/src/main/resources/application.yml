@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: appUserService
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate.ddl-auto: update
+  datasource:
+      url: jdbc:mysql://rcmysqlbp:3306/rcapp
+      username: milos
+      password: 1234
+server.port : 8091
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  istance:
+    preferIpAdress: true

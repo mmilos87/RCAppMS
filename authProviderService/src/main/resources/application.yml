@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: authProviderService
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate.ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/rcapp
+    username: milos
+    password: 1234
+
+application:
+  jwt:
+    secretKey: dadasdasdasdasdasdasdasdasdasdasdasasdasdasddadasdasdasdasdasdasdasdasdasdasdasasdasdasddadasdasdasdasdasdasdasdasdasdasdasasdasdasd
+    tokenPrefix: "Bearer "
+    tokenExpirationAfterMinutes: 14
+server:
+  port : 8089
